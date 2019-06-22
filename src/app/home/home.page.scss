@@ -9,3 +9,7 @@ a{
     text-align: center;
     
 }
+ion-button {
+    --background: linear-gradient(to left, yellow, green);
+    --background-hover: linear-gradient(to left, yellow, green);
+  }
