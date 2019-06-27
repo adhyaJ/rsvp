@@ -10,9 +10,7 @@ import { ToastController, LoadingController } from '@ionic/angular';
 })
 export class HomePage implements OnInit{
 
-  constructor(private router: Router){}
-  name = new FormControl(''); 
-  
+  constructor(private router: Router){} 
   go() {
     this.router.navigate(['registration']);
   };
@@ -22,9 +20,5 @@ export class HomePage implements OnInit{
   };
 
 ngOnInit(){
-  this.name = new FormControl('Dayana', Validators.required);
-  
-  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //Add 'implements OnInit' to the class.
 }
 }
